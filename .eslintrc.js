@@ -17,10 +17,12 @@ module.exports = {
     'next',
     'next/core-web-vitals',
   ],
+/*
   parserOptions: {
-    project: true,
+    project: false,
     tsconfigRootDir: __dirname,
   },
+*/
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
