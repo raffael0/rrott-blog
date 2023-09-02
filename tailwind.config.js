@@ -25,18 +25,30 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: {
+          50: '#fdf4f3',
+          100: '#fce7e4',
+          200: '#fbd3cd',
+          300: '#f7b5aa',
+          400: '#f08979',
+          500: '#e4644f',
+          600: '#d14832',
+          700: '#af3926',
+          800: '#913223',
+          900: '#792f23',
+          950: '#41150e',
+        },
         gray: colors.gray,
       },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.primary.600'),
               '&:hover': {
-                color: `${theme('colors.primary.600')}`,
+                color: `${theme('colors.primary.700')}`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.primary.500') },
             },
             'h1,h2': {
               fontWeight: '700',
@@ -53,9 +65,9 @@ module.exports = {
         invert: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.primary.600'),
               '&:hover': {
-                color: `${theme('colors.primary.400')}`,
+                color: `${theme('colors.primary.500')}`,
               },
               code: { color: theme('colors.primary.400') },
             },
